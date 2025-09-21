@@ -14,6 +14,7 @@ public class Harpoon : MonoBehaviour
         rb.useGravity = true;
         throwDirection = cameraOrientation.forward * harpoonSpeed;
         rb.AddForce(throwDirection, ForceMode.Force);
+        isThrown = true;
     }
     void OnCollisionEnter(Collision collision)
     {
@@ -28,10 +29,11 @@ public class Harpoon : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isThrown)
         {
             Throw();
         }
     }
 }
+
 
