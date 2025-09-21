@@ -17,7 +17,10 @@ public class Harpoon : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        rb.useGravity = false;
+        if (collision.gameObject.tag != "Player")
+        {
+            rb.useGravity = false;
+        }
     }
     void Start()
     {
@@ -31,3 +34,4 @@ public class Harpoon : MonoBehaviour
         }
     }
 }
+
