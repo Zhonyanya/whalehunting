@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//сkрипт гaвно ща другой сделaю
+//завтра точно нормально закоммичу
 public class Harpoon : MonoBehaviour
 {
     public float harpoonSpeed;
@@ -35,6 +35,7 @@ public class Harpoon : MonoBehaviour
         }
     }
 }
+
 
 
 
